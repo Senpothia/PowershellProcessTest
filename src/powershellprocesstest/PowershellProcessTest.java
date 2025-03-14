@@ -23,9 +23,10 @@ public class PowershellProcessTest {
     public static void main(String[] args) {
 
         //Getting the version
+        String command = "powershell.exe  Get-PnPDevice | Where-Object{$_.PNPClass -in 'Ports'}";
         //String command = "powershell.exe  Get-PnPDevice | Where-Object{$_.PNPClass -in 'Ports'} | Out-File -FilePath C:\\Users\\Michel\\Desktop\\ports.txt";
         //String command = "powershell.exe  Get-Process -ProcessName java | Out-File -FilePath C:\\Users\\Michel\\Desktop\\process.txt";
-        String command = "powershell.exe  C:\\Users\\Michel\\Desktop\\Pfile.ps1";
+        //String command = "powershell.exe  C:\\Users\\Michel\\Desktop\\Pfile.ps1";
         // Executing the command
         Process powerShellProcess;
         try {
